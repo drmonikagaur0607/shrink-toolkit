@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shrink - Free Online Tools: Image Compressor, Word Counter, PDF Merger, QR Code Generator</title>
+<meta name="description" content="Free, private browser-based tools. Compress images, count words, merge PDFs, and generate QR codes — nothing you upload ever leaves your device.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E9EEF2; --paper-dim:#DCE4EA; --ink:#1B2A41; --ink-soft:#4C5C70;
+    --line:#B9C6D2; --amber:#F2A93C; --amber-deep:#C97F16; --green:#3F8F6F; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:28px 28px;
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:48px 20px 80px;}
+  .eyebrow{font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--amber-deep); margin:0 0 10px;}
+  h1{font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:40px; line-height:1.05; margin:0 0 12px; letter-spacing:-0.01em;}
+  header p{color:var(--ink-soft); font-size:16px; line-height:1.5; max-width:520px; margin:0 0 36px;}
+  .tools{display:grid; gap:16px;}
+  .tool-card{
+    position:relative;
+    display:block;
+    background:var(--white);
+    border:1.5px solid var(--ink);
+    padding:22px 22px 20px;
+    text-decoration:none;
+    color:var(--ink);
+    transition:transform .12s ease, border-color .12s ease;
+  }
+  .tool-card:hover{transform:translateY(-2px); border-color:var(--amber-deep);}
+  .tool-card::before, .tool-card::after{
+    content:""; position:absolute; width:16px; height:16px; pointer-events:none;
+  }
+  .tool-card::before{top:-1.5px; left:-1.5px; border-top:2.5px solid var(--amber-deep); border-left:2.5px solid var(--amber-deep);}
+  .tool-card::after{bottom:-1.5px; right:-1.5px; border-bottom:2.5px solid var(--amber-deep); border-right:2.5px solid var(--amber-deep);}
+  .tool-index{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.1em; display:block; margin-bottom:8px;}
+  .tool-card h2{font-family:'Space Grotesk', sans-serif; font-size:21px; margin:0 0 6px;}
+  .tool-card p{font-size:14px; color:var(--ink-soft); margin:0; line-height:1.5;}
+  .arrow{font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--amber-deep); margin-top:12px; display:inline-block;}
+  footer{margin-top:48px; font-size:13px; color:var(--ink-soft); border-top:1px solid var(--line); padding-top:20px;}
+  @media (max-width:520px){ h1{font-size:30px;} .wrap{padding:32px 16px 60px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">// toolkit</p>
+    <h1>Small tools. No signup. Nothing uploaded.</h1>
+    <p>Every tool here runs entirely in your browser. Your files and text never touch a server.</p>
+  </header>
+
+  <div class="tools">
+    <a class="tool-card" href="image-compressor.html">
+      <span class="tool-index">01 · IMAGE</span>
+      <h2>Image Compressor</h2>
+      <p>Shrink a photo to an exact file size — built for exam forms, passport uploads, and PAN/Aadhaar portals with strict KB limits.</p>
+      <span class="arrow">Open tool →</span>
+    </a>
+
+    <a class="tool-card" href="word-counter.html">
+      <span class="tool-index">02 · TEXT</span>
+      <h2>Word &amp; Character Counter</h2>
+      <p>Live word count, character count, sentence count, and reading time as you type or paste.</p>
+      <span class="arrow">Open tool →</span>
+    </a>
+
+
+    <a class="tool-card" href="pdf-merger.html">
+      <span class="tool-index">03 · PDF</span>
+      <h2>PDF Merger</h2>
+      <p>Combine multiple PDF files into one document quickly and privately, right in your browser.</p>
+      <span class="arrow">Open tool →</span>
+    </a>
+
+    <a class="tool-card" href="qr-code-generator.html">
+      <span class="tool-index">04 · QR CODE</span>
+      <h2>QR Code Generator</h2>
+      <p>Create a QR code from a URL, text, or other information and download it instantly.</p>
+      <span class="arrow">Open tool →</span>
+    </a>
+  </div>
+
+  <footer>More tools added over time. If you needed a specific one, it probably means someone else does too.</footer>
+</div>
+</body>
+</html>
