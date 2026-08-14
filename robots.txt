@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drmonikagaur0607.github.io/shrink-toolkit/sitemap.xml
